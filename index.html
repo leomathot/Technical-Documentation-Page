@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Technical Documentation Page for freeCodeCmp</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- START NAV BAR -->
+    <nav id="navbar">
+      <header>Basic CSS</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Syntax">Syntax</a>
+      <a class="nav-link" href="#Selectors">Selectors</a>
+      <a class="nav-link" href="#How_To_Add_CSS">How To Add CSS</a>
+      <a class="nav-link" href="#Reference">Reference</a>
+    </nav>
+    <!-- END NAV BAR -->
+    <!-- START INFO SECTION -->
+    <main id="main-doc">
+      <div>
+        <!-- START "Introduction" -->
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>CSS stands for Cascading Style Sheets and is the language we use to define styles for our web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+        <code>body {
+            &nbsp;&nbsp;background-color: black;
+            }
+
+            h1 {
+            &nbsp;&nbsp;color: green;
+            &nbsp;&nbsp;text-align: right;
+            }
+
+            p {
+            &nbsp;&nbsp;font-family: Tahoma;
+            &nbsp;&nbsp;font-size: 25px;
+            }
+        </code>
+      </section>
+      <!-- END "Introduction" -->
+      <!-- START "Syntax" -->
+      <section class="main-section" id="Syntax">
+        <header>Syntax</header>
+        <code>selector {
+            &nbsp;&nbsp;property-name: value;
+            }
+        </code>
+        <ul>
+          <li>The selector points to the HTML element you want to style.</li>
+          <li>Each declaration includes a CSS property name and a value, separated by a colon.</li>
+          <li>The declaration block contains one or more declarations separated by semicolons.</li>
+          <li>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</li>
+        </ul>
+      </section>
+      <!-- END "Syntax" -->
+      <!-- START "Selectors" -->
+      <section class="main-section" id="Selectors">
+        <header>Selectors</header>
+        <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+        <p>Let's see a few examples:</p>
+        <ul><li class="bold selector">CSS element Selector</li></ul>
+        <p class="caption">The element selector selects HTML elements based on the element name.</p>
+        <p class="caption">Here, all h2 elements on the page will be center-aligned, with a blue text color:</p>
+        <code>h2 {
+            &nbsp;&nbsp;color: blue;
+            &nbsp;&nbsp;text-align: center;
+            }
+        </code>
+        <ul><li class="bold selector">CSS id Selector</li></ul>
+        <p class="caption">The id selector uses the id attribute of an HTML element to select a specific element. To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+        <p class="caption">The CSS rule below will be applied to the HTML element with id="main-section":</p>
+        <code>#main-section {
+            &nbsp;&nbsp;text-align: center;
+            &nbsp;&nbsp;background-color: gray;
+            }
+        </code>
+        <ul><li class="bold selector">CSS class Selector</li></ul>
+        <p class="caption">The class selector selects HTML elements with a specific class attribute. To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+        <p class="caption">In this example all HTML elements with class="center" will be red and center-aligned:</p>
+        <code>.center {
+            &nbsp;&nbsp;text-align: center;
+            &nbsp;&nbsp;color: red;
+            }
+        </code>
+      </section>
+      <!-- END "Selectors" -->
+      <!-- START "How To Add CSS" -->
+      <section class="main-section" id="How_To_Add_CSS">
+        <header>How To Add CSS</header>
+        <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet. Each HTML page must include a reference to the external style sheet file inside the <span class="bold">link</span> element, inside the head section.</p>
+        <code>&lt!DOCTYPE html>
+            &lthtml>
+            &nbsp;&nbsp;&lthead>
+            &nbsp;&nbsp;&nbsp;&nbsp;&ltlink rel="stylesheet" href="mystyle.css">
+            &nbsp;&nbsp;&lt/head>
+            &nbsp;&nbsp;&ltbody>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lth1>This is a heading&lt/h1>
+            &nbsp;&nbsp;&nbsp;&nbsp;&ltp>This is a paragraph.&lt/p>
+            &nbsp;&nbsp;&lt/body>
+            &lt/html>
+        </code>
+      </section>
+      <!-- END "How To Add CSS" -->
+      <!-- START "Reference" -->
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>All the documentation in this page is taken from <a class="reference-link" href="https://www.w3schools.com/default.asp">w3schools.com</a>.</p>
+        <code>keep coding!
+        </code>
+      </section>
+      <!-- END "Reference" -->
+      </div>
+      <a class="back-to-top" href="#navbar">Top</a>
+    </main>
+    <!-- END INFO SECTION -->
+  </body>
+<html>
