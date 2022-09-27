@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
+:root {
+  --nav-bar-background: #5B928D;
+  --nav-bar-link: White;
+  --nav-bar-link-hover: #00FFE0;
+  --border: #2D6D66;
+  --main-back-ground: #F5F5FF;
+  --main-font: Black;
+  --code-back-ground: #CEF4E6;
+  --code-font: #254D5D;
+  --refernce-link: #254D5D;
+  --refernce-link-hover: Green;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +22,8 @@
 }
 
 html, body {
-  font-family: Tahoma, sans-serif;
-  background-color: #bbbbbb;
+  font-family: 'Mulish', Tahoma, sans-serif;
+  background-color: #CCCCCC;
   font-size: 1rem;
   scroll-behavior: smooth;
 }
@@ -16,13 +33,13 @@ html, body {
   top: 0;
   left: 0;
   width: 25%;
-  height: 100%;
-  color: #ffffff;
-  background-color: #5B928D;
+  height: 100vh;
+  color: var(--nav-bar-link);
+  background-color: var(--nav-bar-background);
+  text-align: center;
   padding-top: 20px;
   padding-bottom: 15px;
-  border-right: 2px solid #2A4C49;
-  text-align: center;
+  border-right: 2px solid var(--border);
   z-index: 1;
 }
 
@@ -30,7 +47,8 @@ main {
   position: absolute;
   top: 0;
   left: 25%;
-  background-color: #F2FFF8;
+  background-color: var(--main-back-ground);
+  color: var(--main-font);
   padding: 25px 15px 60px 25px;
   min-width: 300px;
 }
@@ -44,9 +62,9 @@ section {
 
 /* This is the colored area where the code is */
 code {
-  color: #455D5D;
-  background-color: #CEF4E6;
-  font-family: monospace, sans-serif;
+  color: var(--code-font);
+  background-color: var(--code-back-ground);
+  font-family: 'Noto Sans Mono', monospace, sans-serif;
   display: block;
   white-space: pre-line;
   text-align: left;
@@ -89,24 +107,31 @@ main header {
 }
 
 .nav-link {
+  width: fit-content;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 25px;
   font-size: 130%;
-  color: #F2FFf8;
+  color: var(--nav-bar-link);
   text-decoration: none;
 }
 
 .nav-link:hover {
-  color: #56ECDF;
+  color: var(--nav-bar-link-hover);
+}
+
+.nav-link:active {
+  color: var(--nav-bar-link);
 }
 
 .reference-link {
-  color: #005060;
+  color: var(--refernce-link);
   text-decoration: none;
 }
 
 .reference-link:hover {
-  color: #188C81;
+  color: var(--refernce-link-hover);
 }
 
 .back-to-top {
@@ -115,9 +140,9 @@ main header {
   bottom: 30px;
   right: 10px;
   z-index: 1;
-  color: #ffffff;
-  background-color: #5B928D;
-  border-bottom: 2px solid #2A4C49;
+  color: var(--nav-bar-link);
+  background-color: var(--nav-bar-background);
+  border-bottom: 2px solid var(--border);
   padding: 10px;
   border-radius: 30%;
   font-size: 14px;
@@ -125,7 +150,11 @@ main header {
 }
 
 .back-to-top:hover {
-  color: #56ECDF;
+  color: var(--nav-bar-link-hover);
+}
+
+.back-to-top:active {
+  color: var(--nav-bar-link);
 }
 
 @media (max-width: 800px) {
@@ -155,14 +184,14 @@ main header {
     height: 205px;
     padding-top: 20px;
     padding-bottom: 15px;
-    border-bottom: 2px solid #2A4C49;
+    border-bottom: 2px solid var(--border);
     border-right: 0;
     text-align: center;
     z-index: 1;
   }
 
 nav header {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
   .nav-link {
@@ -175,7 +204,6 @@ nav header {
     position: absolute;
     top: 200px;
     left: 0;
-    background-color: #F2FFF8;
     padding: 20px 15px 60px 25px;
     min-width: 300px;
   }
